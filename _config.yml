@@ -1,0 +1,25 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            WDM
+tagline:          'Not A Jekyll theme'
+description:      'Programmer things'
+url:              http://wdm.im
+baseurl:          /
+
+author:
+  name:           'Will Meldon'
+  url:            https://twitter.com/wmeldon
+
+twitter_username: wmeldon
+github_username:  wmeldon
+
+paginate:        2
+
+github:
+  repo:           https://github.com/poole/hyde

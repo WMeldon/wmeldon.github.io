@@ -1,0 +1,64 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+$main-background: #3c3c3c
+$body-text: #d2d2d2
+$header-text: #a0a0a0
+
+.lights-out
+  @import "monokai-syntax"
+
+  background-color: $main-background
+  color: $header-text
+
+  h1, h2, h3, h4, h5, h6, strong
+    color: $header-text
+
+  abbr
+    color: lighten($body-text, 5%)
+
+  tbody
+    tr:nth-child(odd)
+      td, th
+        background-color: darken($main-background, 5%)
+
+  .message
+    background-color: darken($main-background, 5%)
+    color: $header-text
+
+  a.pagination-item:hover
+    background-color: darken($main-background, 5%)
+
+
+  .page-title,
+  .post-title,
+  .post-title a
+    color: $body-text
+
+  code, pre
+    background-color: darken($main-background, 5%)
+
+  .gist
+    code, pre
+      background-color: inherit
+
+button
+  display: inline-block
+  padding: 6px 12px
+  margin-bottom: 0
+  font-size: 14px
+  font-weight: 400
+  line-height: 1.42857143
+  text-align: center
+  white-space: nowrap
+  vertical-align: middle
+  cursor: pointer
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  background-image: none
+  border: 1px solid rgba(0, 0, 0, 0)
+  border-radius: 4px
